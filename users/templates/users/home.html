@@ -1,0 +1,9 @@
+﻿{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+chat app
+{% for user in users %} 
+    {{user.username}}
+{% endfor %}
+
+{% endblock content %}

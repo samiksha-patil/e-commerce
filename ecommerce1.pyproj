@@ -1,0 +1,267 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>ecommerce1</Name>
+    <RootNamespace>ecommerce1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6a98c4c0-7cf0-460d-8041-fff8e8070baa</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>ecommerce1.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="ecommerce1\__init__.py" />
+    <Compile Include="ecommerce1\settings.py" />
+    <Compile Include="ecommerce1\urls.py" />
+    <Compile Include="ecommerce1\wsgi.py" />
+    <Compile Include="shop\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shop\templatetags\cart_template_tags.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shop\urls.py" />
+    <Compile Include="users\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="users\urls.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="shop\static\css\addons\datatables-select.css" />
+    <Content Include="shop\static\css\addons\datatables-select.min.css" />
+    <Content Include="shop\static\css\addons\datatables.css" />
+    <Content Include="shop\static\css\addons\datatables.min.css" />
+    <Content Include="shop\static\css\addons\directives.css" />
+    <Content Include="shop\static\css\addons\directives.min.css" />
+    <Content Include="shop\static\css\addons\flag.css" />
+    <Content Include="shop\static\css\addons\flag.min.css" />
+    <Content Include="shop\static\css\addons\rating.css" />
+    <Content Include="shop\static\css\addons\rating.min.css" />
+    <Content Include="shop\static\css\addons\zmd.hierarchical-display.css" />
+    <Content Include="shop\static\css\addons\zmd.hierarchical-display.min.css" />
+    <Content Include="shop\static\css\bootstrap.css" />
+    <Content Include="shop\static\css\bootstrap.min.css" />
+    <Content Include="shop\static\css\mdb.css" />
+    <Content Include="shop\static\css\mdb.lite.css" />
+    <Content Include="shop\static\css\mdb.lite.min.css" />
+    <Content Include="shop\static\css\mdb.min.css" />
+    <Content Include="shop\static\css\modules\animations-extended.css" />
+    <Content Include="shop\static\css\modules\animations-extended.min.css" />
+    <Content Include="shop\static\css\style.css" />
+    <Content Include="shop\static\css\style.min.css" />
+    <Content Include="shop\static\font\roboto\Roboto-Bold.eot" />
+    <Content Include="shop\static\font\roboto\Roboto-Bold.ttf" />
+    <Content Include="shop\static\font\roboto\Roboto-Bold.woff" />
+    <Content Include="shop\static\font\roboto\Roboto-Bold.woff2" />
+    <Content Include="shop\static\font\roboto\Roboto-Light.eot" />
+    <Content Include="shop\static\font\roboto\Roboto-Light.ttf" />
+    <Content Include="shop\static\font\roboto\Roboto-Light.woff" />
+    <Content Include="shop\static\font\roboto\Roboto-Light.woff2" />
+    <Content Include="shop\static\font\roboto\Roboto-Medium.eot" />
+    <Content Include="shop\static\font\roboto\Roboto-Medium.ttf" />
+    <Content Include="shop\static\font\roboto\Roboto-Medium.woff" />
+    <Content Include="shop\static\font\roboto\Roboto-Medium.woff2" />
+    <Content Include="shop\static\font\roboto\Roboto-Regular.eot" />
+    <Content Include="shop\static\font\roboto\Roboto-Regular.ttf" />
+    <Content Include="shop\static\font\roboto\Roboto-Regular.woff" />
+    <Content Include="shop\static\font\roboto\Roboto-Regular.woff2" />
+    <Content Include="shop\static\font\roboto\Roboto-Thin.eot" />
+    <Content Include="shop\static\font\roboto\Roboto-Thin.ttf" />
+    <Content Include="shop\static\font\roboto\Roboto-Thin.woff" />
+    <Content Include="shop\static\font\roboto\Roboto-Thin.woff2" />
+    <Content Include="shop\static\img\flags.png" />
+    <Content Include="shop\static\img\lightbox\default-skin.png" />
+    <Content Include="shop\static\img\lightbox\default-skin.svg" />
+    <Content Include="shop\static\img\lightbox\preloader.gif" />
+    <Content Include="shop\static\img\overlays\01.png" />
+    <Content Include="shop\static\img\overlays\02.png" />
+    <Content Include="shop\static\img\overlays\03.png" />
+    <Content Include="shop\static\img\overlays\04.png" />
+    <Content Include="shop\static\img\overlays\05.png" />
+    <Content Include="shop\static\img\overlays\06.png" />
+    <Content Include="shop\static\img\overlays\07.png" />
+    <Content Include="shop\static\img\overlays\08.png" />
+    <Content Include="shop\static\img\overlays\09.png" />
+    <Content Include="shop\static\img\sample.jpg" />
+    <Content Include="shop\static\img\svg\arrow_left.svg" />
+    <Content Include="shop\static\img\svg\arrow_right.svg" />
+    <Content Include="shop\static\img\svg\flags.png" />
+    <Content Include="shop\static\js\addons\datatables-select.js" />
+    <Content Include="shop\static\js\addons\datatables-select.min.js" />
+    <Content Include="shop\static\js\addons\datatables.js" />
+    <Content Include="shop\static\js\addons\datatables.min.js" />
+    <Content Include="shop\static\js\addons\imagesloaded.pkgd.min.js" />
+    <Content Include="shop\static\js\addons\jquery.zmd.hierarchical-display.js" />
+    <Content Include="shop\static\js\addons\jquery.zmd.hierarchical-display.min.js" />
+    <Content Include="shop\static\js\addons\masonry.pkgd.min.js" />
+    <Content Include="shop\static\js\addons\progressBar.js" />
+    <Content Include="shop\static\js\addons\progressBar.min.js" />
+    <Content Include="shop\static\js\addons\rating.js" />
+    <Content Include="shop\static\js\addons\rating.min.js" />
+    <Content Include="shop\static\js\bootstrap.js" />
+    <Content Include="shop\static\js\bootstrap.min.js" />
+    <Content Include="shop\static\js\jquery-3.4.1.min.js" />
+    <Content Include="shop\static\js\mdb.js" />
+    <Content Include="shop\static\js\mdb.min.js" />
+    <Content Include="shop\static\js\modules\bs-custom-file-input.js" />
+    <Content Include="shop\static\js\modules\chart.js" />
+    <Content Include="shop\static\js\modules\default-file-input.js" />
+    <Content Include="shop\static\js\modules\enhanced-modals.js" />
+    <Content Include="shop\static\js\modules\forms-free.js" />
+    <Content Include="shop\static\js\modules\jquery.easing.js" />
+    <Content Include="shop\static\js\modules\scrolling-navbar.js" />
+    <Content Include="shop\static\js\modules\treeview.js" />
+    <Content Include="shop\static\js\modules\velocity.js" />
+    <Content Include="shop\static\js\modules\velocity.min.js" />
+    <Content Include="shop\static\js\modules\waves.js" />
+    <Content Include="shop\static\js\modules\wow.js" />
+    <Content Include="shop\static\js\popper.min.js" />
+    <Content Include="shop\static\scss\addons\_datatables-select.scss" />
+    <Content Include="shop\static\scss\addons\_datatables.scss" />
+    <Content Include="shop\static\scss\addons\_directives.scss" />
+    <Content Include="shop\static\scss\addons\_flags.scss" />
+    <Content Include="shop\static\scss\addons\_hierarchical-display.scss" />
+    <Content Include="shop\static\scss\addons\_rating.scss" />
+    <Content Include="shop\static\scss\core\bootstrap\_functions.scss" />
+    <Content Include="shop\static\scss\core\bootstrap\_rfs.scss" />
+    <Content Include="shop\static\scss\core\bootstrap\_variables.scss" />
+    <Content Include="shop\static\scss\core\_colors.scss" />
+    <Content Include="shop\static\scss\core\_global.scss" />
+    <Content Include="shop\static\scss\core\_helpers.scss" />
+    <Content Include="shop\static\scss\core\_masks.scss" />
+    <Content Include="shop\static\scss\core\_mixins.scss" />
+    <Content Include="shop\static\scss\core\_typography.scss" />
+    <Content Include="shop\static\scss\core\_variables.scss" />
+    <Content Include="shop\static\scss\core\_waves.scss" />
+    <Content Include="shop\static\scss\free\modules\animations-extended\animations-extended.scss" />
+    <Content Include="shop\static\scss\free\modules\animations-extended\_module.scss" />
+    <Content Include="shop\static\scss\free\_animations-basic.scss" />
+    <Content Include="shop\static\scss\free\_badges.scss" />
+    <Content Include="shop\static\scss\free\_buttons.scss" />
+    <Content Include="shop\static\scss\free\_cards.scss" />
+    <Content Include="shop\static\scss\free\_carousels.scss" />
+    <Content Include="shop\static\scss\free\_depreciated.scss" />
+    <Content Include="shop\static\scss\free\_dropdowns.scss" />
+    <Content Include="shop\static\scss\free\_footers.scss" />
+    <Content Include="shop\static\scss\free\_forms.scss" />
+    <Content Include="shop\static\scss\free\_input-group.scss" />
+    <Content Include="shop\static\scss\free\_list-group.scss" />
+    <Content Include="shop\static\scss\free\_loader.scss" />
+    <Content Include="shop\static\scss\free\_modals.scss" />
+    <Content Include="shop\static\scss\free\_msc.scss" />
+    <Content Include="shop\static\scss\free\_navbars.scss" />
+    <Content Include="shop\static\scss\free\_pagination.scss" />
+    <Content Include="shop\static\scss\free\_steppers.scss" />
+    <Content Include="shop\static\scss\free\_switch.scss" />
+    <Content Include="shop\static\scss\free\_tables.scss" />
+    <Content Include="shop\static\scss\free\_treeview.scss" />
+    <Content Include="shop\static\scss\mdb.lite.scss" />
+    <Content Include="shop\static\scss\mdb.scss" />
+    <Content Include="shop\static\scss\style.scss" />
+    <Content Include="shop\static\scss\_custom-skin.scss" />
+    <Content Include="shop\static\scss\_custom-styles.scss" />
+    <Content Include="shop\static\scss\_custom-variables.scss" />
+    <Content Include="shop\templates\base.html" />
+    <Content Include="shop\templates\checkout-page.html" />
+    <Content Include="shop\templates\footer.html" />
+    <Content Include="shop\templates\home-page.html" />
+    <Content Include="shop\templates\navbar.html" />
+    <Content Include="shop\templates\order_summary.html" />
+    <Content Include="shop\templates\payment.html" />
+    <Content Include="shop\templates\product.html" />
+    <Content Include="shop\templates\scripts.html" />
+    <Content Include="shop\templates\upload_item.html" />
+    <Content Include="users\templates\users\base.html" />
+    <Content Include="users\templates\users\home.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ecommerce1\" />
+    <Folder Include="shop\" />
+    <Folder Include="shop\templatetags\" />
+    <Folder Include="shop\static\" />
+    <Folder Include="shop\static\css\" />
+    <Folder Include="shop\static\css\addons\" />
+    <Folder Include="shop\static\css\modules\" />
+    <Folder Include="shop\static\font\" />
+    <Folder Include="shop\static\font\roboto\" />
+    <Folder Include="shop\static\img\" />
+    <Folder Include="shop\static\img\lightbox\" />
+    <Folder Include="shop\static\img\overlays\" />
+    <Folder Include="shop\static\img\svg\" />
+    <Folder Include="shop\static\js\" />
+    <Folder Include="shop\static\js\addons\" />
+    <Folder Include="shop\static\js\modules\" />
+    <Folder Include="shop\static\scss\" />
+    <Folder Include="shop\static\scss\addons\" />
+    <Folder Include="shop\static\scss\core\" />
+    <Folder Include="shop\static\scss\core\bootstrap\" />
+    <Folder Include="shop\static\scss\free\" />
+    <Folder Include="shop\static\scss\free\modules\" />
+    <Folder Include="shop\static\scss\free\modules\animations-extended\" />
+    <Folder Include="shop\templates\" />
+    <Folder Include="users\" />
+    <Folder Include="users\templates\" />
+    <Folder Include="users\templates\users\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

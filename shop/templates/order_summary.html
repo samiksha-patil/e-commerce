@@ -1,0 +1,75 @@
+﻿{% load static %}
+{% include "base.html" %}
+  <main>
+    <div class="container">
+
+      <div class="table-responsive">
+          <h2>Order Summary</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Item Title</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+         <th scope="col">Total Item Price</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+        {% for order_item in object.items.all %}
+      <tr>
+        <th scope="row">{{forloop.counter}}</th>
+        <td>{{ order_item.item.title }}</td>
+        <td><del>{{ order_item.item.price }}</del>&nbsp{{ order_item.item.discount_price }}</td>
+        
+          <td class="center-on-small-only">
+                        <span class="qty">{{ order_item.quantity }}</span>
+                    
+                        
+              <a href="{% url 'remove_single_item_from_cart' order_item.item.slug %}" class="btn btn-sm btn-primary  btn-rounded waves-effect waves-light ml-2">
+                            —
+                          </a>
+              <a href="{% url 'add_to_cart' order_item.item.slug %}" class="btn btn-sm btn-primary purple-gradient btn-rounded waves-effect waves-light"> +</a>
+                      </td>
+        <td>
+            {% if order_item.item.discount_price %}
+            ${{ order_item.get_total_discount_item_price }}
+            (saving ${{order_item.get_amount_saved}})
+            {% else %}
+            ${{ order_item.get_total_item_price }}
+            {% endif %}
+        </td>       
+      <td><a href="{% url 'remove_from_cart' order_item.item.slug %}"><i class="fas fa-trash pink-text"></i></a></td>
+           
+      </tr>
+        {% empty %}
+        <tr>
+            <td colspan="5"> Your Cart is Empty</td>
+        </tr>
+        {% endfor %}
+        {% if object.get_total %}
+        <tr>
+            <td colspan="4"><b>Order Total</b></td>
+            <td><strong>${{ object.get_total }}</strong></td>
+            
+        </tr>
+        <tr>
+             <td colspan="5"> 
+            <a class="btn btn-warning float-right ml-2" href="{% url 'checkout' %}">Proceed to checkout</a>
+            <a class="btn btn-primary float-right"  href="/item/">Continue shopping</a>
+            </td>
+        </tr>
+
+     {% endif %}
+    </tbody>
+  </table>
+</div>
+
+     
+    </div>
+  </main>
+  <!--Main layout-->
+{% include "footer.html" %}
+  
+  
